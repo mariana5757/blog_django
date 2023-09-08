@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-sm col-md-4 col-lg-5 bg" >
+
+            </div>
+           
+            <div class="col-sm-12  col-md-8 col-lg-7   cuerpoLogin  ">
+                <h2 class="fw-bold text-center px-5 py-5">Login</h2>
+                <form action="#" method="POST">
+                    {% csrf_token %}
+                    <div class="mb-4">
+                        <label class="form-label" for="">Usuario</label>
+                        <input class="form-control campos" type="text" name="username">
+
+                    </div>
+                    <div class="mb-4">
+                        <label class="form-label" for="">Contraseña</label>
+                        <input class="form-control campos" type="password" name="password">
+
+                    </div>
+                    <div class="mb-4">
+                        <input type="checkbox" name="connected" class="form-check-input campos">
+                        <label for="connected" class="form-check-label">Recordarme</label>
+
+                    </div>
+                    <div class="d-grid">
+                        <button id="boton" type="submit" class="btn btn-success ">Iniciar Sesión</button>
+
+                    </div>
+                    <div class="my-3">
+                        <span>No tienes cuenta? <a href="#">Registrate</a></span><br>
+                        <span><a href="#"></a>Recuperar Contraseña</span>
+
+                    </div>
+                </form>    
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>

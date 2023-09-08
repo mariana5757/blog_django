@@ -20,7 +20,7 @@ def login(request):
         else:
             return HttpResponse('Usuario no existe')
         
-    return render(request, 'login.html')
+    return render(request, 'index.html')
 
 def register(request):
     if(request.method == 'POST'):

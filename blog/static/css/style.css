@@ -1,0 +1,11 @@
+.bg {
+	background-image: url(../img/medio-ambiente.webp);
+	background-position: center center;
+}
+
+.cuerpoLogin {
+	background-color: #ffffff;
+	border-color: rgb(46, 131, 46);
+	border-style: double;
+
+}
